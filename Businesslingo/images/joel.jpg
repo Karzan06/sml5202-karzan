@@ -1,0 +1,450 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+/*/setting the body layout**/
+body{
+font-family: Arial, sans-serif, Verdana;
+margin: 0;
+padding:0;
+font-size: 20px;
+line-height:2.0;
+background-color: #E0F8F7;
+}
+/*end of the body layout*/
+
+/*global*/
+#wrapper{
+	max-width:150%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+/*global*/
+
+/*setting the header section**/
+header{
+	background: #35424a;
+	color:#ffffff;
+	padding-top: 70px;
+	min-height:100px;
+	border-bottom: #e8491d 5px solid;
+}
+/*end of the header section*/
+
+/**creating the logo**/
+header h1{
+	position: absolute;
+	top:10px;
+	color: red;
+	font-size: 30px;
+	text-align: left;
+	overflow: hidden;
+	text-transform:uppercase;
+}
+/*end of the logo*/
+
+/*setting the navigaiion*/
+header nav a{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+header nav ul{
+	margin:0;
+	padding:0;
+}
+
+header nav li{
+	float:left;
+	display:inline;
+	padding: 20px 20px;
+}
+
+header nav{
+	float:right;
+}
+
+header nav .active{
+	color:#e8491d;
+}
+
+header nav li a:hover {
+    background-color: #e62525;
+}
+/**end of the navigation bar**/
+
+
+/**css index page**/
+
+/**setting the banner**/
+main #slider img{
+	width:100%;
+	max-height: 400px;
+}
+/**end of the banner**/
+
+/**setting the main image*/
+main #hero img{
+	width:100%;
+	max-height:800px;
+}
+/**end of setting the main image*/
+
+/*targrtting the 3 images to float left*/
+.col {
+	width: 33%;
+	float:left;
+}
+/**end of targrtting the 3 images to float them left**/
+
+/** end of css index page**/
+
+.frame1{
+	float: left;
+	padding: 80px 70px;
+}
+
+/**css about page*/
+
+/**css first row**/
+
+main #row1{
+	border-bottom: #e8491d 5px solid;
+}
+
+main #row1 h3{
+	text-align: center;
+}
+
+main #row1 img {
+    float:center;
+		padding: 30px 630px;
+}
+
+main #row1 p {
+	text-align: center;
+}
+
+/**css second row**/
+main #row2{
+	border-bottom: #e8491d 5px solid;
+}
+
+main #row2 h3{
+	text-align: center;
+}
+
+main #row2 img {
+    float:center;
+		padding: 30px 630px;
+}
+
+main #row2 p {
+	text-align: center;
+	padding: 30px 50px;
+}
+
+/**css third row**/
+main #row3{
+	border-bottom: #e8491d 5px solid;
+	margin-bottom: 20px;
+}
+
+main #row3 h3{
+	text-align: center;
+	font-size: 30px;
+}
+
+main #row3 img {
+    float:center;
+		padding: 30px 630px;
+}
+
+main #row3 p {
+	text-align: center;
+	padding: 30px 50px;
+}
+/**end of css about page*/
+
+
+/**css theteam page**/
+
+
+/*css heading**/
+main .alone h2{
+ font-size: 100px;
+ float: left;
+ padding: 2px;
+ color: red;
+}
+
+/*target manager row*/
+.manager{
+	padding: 30px 50px;
+	float:left;
+}
+
+.manager p{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*target set1 row**/
+section{
+	clear: both;
+}
+.set1 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set1 p{
+	text-align: center;
+}
+
+/*target set2 row**/
+section{
+	clear: both;
+}
+
+.set2 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set2 p{
+	text-align: center;
+}
+
+/*target set3 row**/
+section{
+	clear: both;
+}
+
+.set3 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set3 p{
+	text-align: center;
+}
+
+/*target set4 row**/
+section{
+	clear: both;
+}
+
+.set4 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set4 p{
+	text-align: center;
+}
+
+/*target set5 row**/
+section{
+	clear: both;
+}
+
+.set5 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set5 p{
+	text-align: center;
+}
+
+/*target set6 row**/
+section{
+	clear: both;
+}
+
+.set6 {
+    float: left;
+    padding: 30px 20px;
+}
+
+main .set6 p{
+	text-align: center;
+}
+/**css history page**/
+
+/**setting the text**/
+#section1 a{
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	padding-left: 5px;
+
+}
+/**end of setting the text**/
+
+/**setting the heading of the first section*/
+#section1 h2{
+	text-align: center;
+	color: red;
+	font-size: 30px;
+}
+/** end ofsetting the heading first section**/
+
+/**setting the links of the history**/
+#section1 ul{
+	margin:0;
+	padding:0;
+}
+
+#section1 li{
+	display:inline;
+	padding: 20px 20px;
+}
+
+#section1 nav{
+	float:left;
+}
+
+#section1 .active{
+	color:#e8491d;
+}
+
+#section1 li a:hover {
+    background-color: grey;
+}
+
+main #trophies img{
+	width:100%;
+	max-height: 800px;
+}
+/**end of setting links of history**/
+
+/**setting the second section**/
+#section2 a{
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+/**setting the heading of the second section**/
+#section2 h2{
+	text-align: center;
+	font-size:30px;
+	color: red;
+}
+
+/**setting the links of the legends**/
+#section2 ul{
+	margin:0;
+	padding:0;
+}
+
+#section2 li{
+	display:inline;
+	padding: 20px 20px;
+}
+
+#section2 nav{
+	float:right;
+}
+
+#section2 .active{
+	color:#e8491d;
+}
+
+#heading2 li a:hover {
+    background-color: grey;
+}
+
+main #legends img{
+	width:100%;
+	max-height: 600px;
+}
+/**end of setting the links**/
+
+/**end of histroy page**/
+
+
+/**contact page**/
+body #frame{
+	width: 100%;
+}
+
+
+/**footer section**/
+
+/**setting the footer**/
+footer {
+	background: #35424a;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:75px;
+	border-bottom: #e8491d 5px solid;
+	clear:both;
+	height:180px;
+}
+
+/**setting the links of the footer**/
+import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+footer h1 h2 h3 h4 h5 h6 {
+    margin:  1% 0 1% 0;
+}
+footer ._12 {
+    font-size: 1.2em;
+}
+footer ._14 {
+    font-size: 1.0em;
+		margin-top: 10px;
+		margin-left: 11px;
+}
+
+footer ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+
+footer.social-icon {
+    color: #fff;
+}
+
+footer ul.social-icons {
+    margin-top: 10px;
+		margin-left: 45px;
+}
+
+footer .social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz
