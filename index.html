@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BusinessLingo| Homepage |</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+   <script>
+   //alert("Site is under construction!!");
+    window.open("popup.html","Popup","width=500,height=500");
+   </script>
+
+  <body>
+	<div id="wrapper"> <!--this is the begging of the wrapper-->
+
+  <header> <!-- this is the header section-->
+   <div> <!--logo-->
+      <h1><strong>Businesslingo</strong></h1>
+   </div><!--the end of logo-->
+     <nav> <!-- this is the navigation area-->
+      <ul>
+        <li class="current"><a href="index.html">HOMEpage</a></li>
+        <li><a href="Business vocabulary.html">Business Vocabulary</a></li>
+        <li><a href="Business phrases.html">Business pHrases</a></li>
+        <li><a href="Business vocabulary and phrases Trainer.html">Business Vocabulary and pHrases trainer</a></li>
+        <li><a href="http://damaris.at/forum/index.php" target="_blank">Forum</a></li>
+      </ul>
+    </nav><!--end of navigation-->
+  </header><!--end of header-->
+
+  <main> <!--main-->
+  <marquee behavior="scroll" direction="right">Making Business easier, Handeln einfacher machen</marquee>
+    <div id="slider"> <!-- this is the banner-->
+  	   <style>
+.parallax {
+  /* The image used */
+  background-image: url("images/office-1209640_1920.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+
+<script>
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+</script>
+
+
+    </div> <!--end of banner-->
+    <center><h1 class="meineKlasse" style="font-style:Arial">Welcome to BusinessLingo!</h1></center>
+    <center><h1 class="meineKlasse" style="font-style:Arial">Willkommen auf BusinessLingo!</h1></center>
+
+   	   <style>
+.parallaxe {
+  /* The image used */
+  background-image: url("images/41390106292_67e47ed8f8_b.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallaxe"></div>
+
+<script>
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallaxe {
+    background-attachment: scroll;
+  }
+}
+</script>
+
+<center><div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></center>
+
+<script>
+// function([string1, string2],target id,[color1,color2])
+ consoleText(['Every Businesswoman.', 'Every Businessman', 'Can use BusinessLingo.'], 'text',['tomato','rebeccapurple','blue']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+</script>
+
+
+</main>
+  <footer> <!-- footer section-->
+    <div>
+         <center><h4 class="_14">We change the Business World in Germany and the Rest of the World!</h4></center>
+
+     </div>
+     <marquee behavior="scroll" direction="left"><img src="images/81675138_845401095888709_5256000446484447232_n.jpg" width="94" height="88" alt="BusinessLingo Logo" /></marquee>
+
+    </div>
+  </footer> <!--end of footer-->
+
+</div> <!--end of wrapper-->
+</body>
+</html>
+
